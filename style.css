@@ -222,12 +222,10 @@ ul li {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 170, 255, 0.3);
 }
-
 /* Hidden Projects Initially */
 .hidden-projects {
     display: none;
 }
-
 /* See More Button */
 .see-more-btn {
     background-color: transparent;
@@ -240,13 +238,10 @@ ul li {
     border-radius: 5px;
     transition: 0.3s ease;
 }
-
 .see-more-btn:hover {
     background-color: #00aaff;
     color: #fff;
 }
-
-
 /* Icon animation on hover */
 .github-link:hover::before {
     transform: rotate(360deg);
@@ -267,10 +262,16 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
 /* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Navbar ko right side move karne ke liye */
+    justify-content: end;
     align-items: center;
     padding: 10px 20px;
     background-color: black;
@@ -286,30 +287,18 @@ footer {
 .nav-links {
     list-style: none;
     display: flex;
-    margin-right: 20px; /* Navbar ko right side push karne ke liye */
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    position: relative;
     transition: color 0.3s ease-in-out;
-}
-
-/* Mobile Menu Icon */
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 1000;
 }
 
 /* Responsive Navbar */
@@ -318,14 +307,16 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 10px;
         right: 0;
         background: black;
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 0px 0;
     }
-
+    .navbar{
+        width: 80%;
+    }
     .nav-links.active {
         display: flex;
     }
@@ -338,6 +329,7 @@ footer {
         display: block;
     }
 }
+
 
 /* Hero Section Styling */
 .hero-section {
@@ -681,6 +673,7 @@ footer {
     .hero-section {
         flex-direction: column;
         text-align: center;
+
     }
     .hero-content, .hero-image {
         max-width: 100%;
@@ -778,6 +771,7 @@ img {
         flex-direction: column;
         text-align: center;
         padding: 50px 5%;
+        margin-top: 60px;
     }
 
     .hero-content {
