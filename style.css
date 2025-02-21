@@ -267,32 +267,10 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
-
 /* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 10vh;
-    z-index: 1000;
-}
-
-/* Logo Styling */
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-/* Navbar Styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Navbar ko right side move karne ke liye */
     align-items: center;
     padding: 10px 20px;
     background-color: black;
@@ -302,6 +280,24 @@ footer {
     left: 0;
     height: 10vh;
     z-index: 1000;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; /* Navbar ko right side push karne ke liye */
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Mobile Menu Icon */
@@ -314,24 +310,6 @@ footer {
     top: 15px;
     right: 20px;
     z-index: 1000;
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    position: relative;
-    transition: color 0.3s ease-in-out;
 }
 
 /* Responsive Navbar */
@@ -360,7 +338,6 @@ footer {
         display: block;
     }
 }
-
 
 /* Hero Section Styling */
 .hero-section {
