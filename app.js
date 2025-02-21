@@ -51,3 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 });
+
+function sendToWhatsApp() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    
+    let phoneNumber = "918827983891"; // Apna WhatsApp number (with country code)  
+    let text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    
+    let url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`;
+    window.open(url, '_blank');
+}

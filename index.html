@@ -134,7 +134,7 @@
         <!-- Project 1 -->
         <div class="project-card">
             <i class="fas fa-mobile-alt"></i>
-            <h3>E-Learning Plateform</h3>
+            <h3>E-Learning Platform</h3>
             <p>The effective and open source e-learning plateform which allow users to access and edit notes,create course , view courses.</p>
             <a href="https://github.com/Kareenajethwani/studyFlix" target="_blank">See More</a>
         </div>
@@ -184,8 +184,18 @@
     <h1>Contact Me</h1><br>
     <div class="contact-container">
         <div class="contact-info">
-            <p><i class="fas fa-paper-plane"></i> missjethwani03@gmail.com</p>
-            <p><i class="fas fa-phone"></i>+91 8827983891 </p>
+            <p>
+                <a href="mailto:missjethwani03@gmail.com" class="contact-link">
+                    <i class="fas fa-paper-plane"></i> missjethwani03@gmail.com
+                </a>
+            </p>
+            <p>
+                <a href="tel:+918827983891" class="contact-link">
+                    <i class="fas fa-phone"></i> +91 8827983891
+                </a>
+            </p>
+            
+
             <div class="social-icons">
             
                 <a href="https://github.com/Kareenajethwani"><i class="fab fa-github"></i></a>
@@ -195,10 +205,10 @@
             <a href="/images/kareena jethwani.pdf" download class="btn">Download CV</a>
         </div>
         <div class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Submit</button>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn" onclick="sendToWhatsApp()">Submit</button>
         </div>
     </div>
 </div>
